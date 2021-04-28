@@ -86,8 +86,8 @@ public class PetShop {
         File file = new File(filename);
         PrintWriter output = new PrintWriter(file);
 
-        for (MyPet account : petsAry) {
-            output.println(account.toText());
+        for (int i = 0; i < this.count ; i++) {
+            output.println(petsAry[i].toText());
             ++count;
         }
         output.close();
